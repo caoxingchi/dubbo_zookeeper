@@ -1,0 +1,13 @@
+server:
+  port: 8004
+dubbo:
+  protocol:
+    port: 30007
+
+  application:
+    name: dubbo-zookeeper-consumer
+
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  consumer:
+    timeout: 180000
